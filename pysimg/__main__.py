@@ -55,7 +55,7 @@ def main():
 
     while not done:
         if args.split:
-            outf = open(args.output + '.split_%d' % split_number, 'wb')
+            outf = open(args.output + '.%d' % split_number, 'wb')
         elif isinstance(args.output, str):
             outf = open(args.output, 'wb')
         else:
